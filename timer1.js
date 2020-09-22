@@ -3,10 +3,8 @@ let timeInput = process.argv.slice(2);
 let stringOrNo = "";
 
 for (const items of timeInput) {
-  if(typeof items === "string") {
+  if(isNaN(items)) {
     stringOrNo = true;
-  } else {
-    stringOrNo = false;
   }
  }
 
